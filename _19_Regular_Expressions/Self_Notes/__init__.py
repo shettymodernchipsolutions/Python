@@ -9,14 +9,14 @@ import re
 # match = re.match(regex, text)
 # print('Matching regex with text: ', match)
 
-# text = 'Python is super easy'
-# regex = r'Python'
-# match1 = re.match(regex, text)
-# print(match1)
-# print(match1.span())
-# start, end = match1.span()
-# print(text[start:end:])
-# print(text[match1.start(): match1.end():])
+text = 'Python is super easy'
+regex = r'Python is super'
+match1 = re.match(regex, text)
+print(match1)
+print(match1.span())
+start, end = match1.span()
+print(text[start:end:])
+print(text[match1.start(): match1.end():])
 
 
 text = 'Python is super easy'
@@ -36,4 +36,8 @@ if reg:
 else:
     print('No')
 
+txt = 'I am a Python developer'
+pattern = r'Python'
 
+reg = re.search(pattern, txt)
+print(txt[reg.start():reg.end():])
