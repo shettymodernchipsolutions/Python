@@ -8,3 +8,19 @@ f1.close()
 f2.close()
 
 
+def prime(n):
+    x = True
+    for i in range(2, n):
+        if n % i == 0:
+            x = False
+            break
+        else:
+            x = True
+    return x
+
+
+a = 150
+while a < 201:
+    if prime(a) == True:
+        print(a)
+    a+=1

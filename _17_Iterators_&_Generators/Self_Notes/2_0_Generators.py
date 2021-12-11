@@ -18,16 +18,16 @@ yield statement, it automatically becomes a generator function. Consider the fol
 """
 
 
-def simple():
-    for i in range(10):
-        if i % 2 == 0:
-            yield i
-
-        # Successive Function call using for loop
-
-
-for j in simple():
-    print(j)
+# def simple():
+#     for i in range(10):
+#         if i % 2 == 0:
+#             yield i
+#
+#         # Successive Function call using for loop
+#
+#
+# for j in simple():
+#     print(j)
 
 """
 yield vs. return 
@@ -42,24 +42,24 @@ Using multiple yield Statement
 
 We can use the multiple yield statement in the generator function. Consider the following example.
 """
-print("--------------------------------------------------------------------------------------------------")
+# print("--------------------------------------------------------------------------------------------------")
 
 
-def multiple_yield():
-    str1 = "First String"
-    yield str1
-
-    str2 = "Second string"
-    yield str2
-
-    str3 = "Third String"
-    yield str3
-
-
-obj = multiple_yield()
-print(next(obj))
-print(next(obj))
-print(next(obj))
+# def multiple_yield():
+#     str1 = "First String"
+#     yield str1
+#
+#     str2 = "Second string"
+#     yield str2
+#
+#     str3 = "Third String"
+#     yield str3
+#
+#
+# obj = multiple_yield()
+# print(next(obj))
+# print(next(obj))
+# print(next(obj))
 
 """
 Difference between Generator function and Normal function:
@@ -80,19 +80,19 @@ square bracket is replaced by round parentheses. The list comprehension calculat
 generator expression calculates one item at a time. 
 '''
 
-print("----------------------------------------------------------------------")
-
-list_1 = [1, 2, 3, 4, 5, 6, 7]
-
-# List Comprehension
-z = [x ** 3 for x in list_1]
-print(z)
-
-# Generator expression
-a = (x ** 3 for x in list_1)
-
-print(a)
-print("--------------------------------------------------------------------------------------")
+# print("----------------------------------------------------------------------")
+#
+# list_1 = [1, 2, 3, 4, 5, 6, 7]
+#
+# # List Comprehension
+# z = [x ** 3 for x in list_1]
+# print(z)
+#
+# # Generator expression
+# a = (x ** 3 for x in list_1)
+#
+# print(a)
+# print("--------------------------------------------------------------------------------------")
 """
 In the above program, list comprehension has returned the list of cube of elements whereas generator expression 
 has returned the reference of calculated value. Instead of applying a for loop, we can also call next() on the 
@@ -100,31 +100,31 @@ generator object.
 Let's consider another example: 
 """
 
-list_2 = [1, 2, 3, 4, 5, 6]
-
-z = (x ** 3 for x in list_2)
-
-print(next(z))
-
-print(next(z))
-
-print(next(z))
-
-print(next(z))
-
-print("------------------------------------------------------------------------------------")
+# list_2 = [1, 2, 3, 4, 5, 6]
+#
+# z = (x ** 3 for x in list_2)
+#
+# print(next(z))
+#
+# print(next(z))
+#
+# print(next(z))
+#
+# print(next(z))
+#
+# print("------------------------------------------------------------------------------------")
 
 
 # Example: Write a program to print the table of the given number using the generator.
 
-def table(n):
-    for i in range(1, 11):
-        yield n * i
-        i = i + 1
-
-
-for k in table(15):
-    print(k)
+# def table(n):
+#     for i in range(1, 11):
+#         yield n * i
+#         i = i + 1
+#
+#
+# for k in table(15):
+#     print(k)
 
 
 """
@@ -142,16 +142,16 @@ generator is a great example of memory optimization. Let's discuss it in the bel
 sys.getsizeof() function. 
 
 """
-print("-------------------------------------------------------------------------------------------")
-import sys
-# List comprehension
-nums_squared_list = [i * 2 for i in range(1000)]
-print("Memory in Bytes:")
-print(sys.getsizeof(nums_squared_list))
-# Generator Expression
-nums_squared_gc = (i ** 2 for i in range(1000))
-print("Memory in Bytes:")
-print(sys.getsizeof(nums_squared_gc))
+# print("-------------------------------------------------------------------------------------------")
+# import sys
+# # List comprehension
+# nums_squared_list = [i * 2 for i in range(1000)]
+# print("Memory in Bytes:")
+# print(sys.getsizeof(nums_squared_list))
+# # Generator Expression
+# nums_squared_gc = (i ** 2 for i in range(1000))
+# print("Memory in Bytes:")
+# print(sys.getsizeof(nums_squared_gc))
 
 """
 We can observe from the above output that list comprehension is using 4508 bytes of memory, whereas generator expression
@@ -172,12 +172,27 @@ produce only one item at a time, consider the following example:
 print("------------------------------------------------------------------------------------")
 
 
-def infinite_sequence():
-    num = 0
-    while True:
-        yield num
-        num += 1
+# def infinite_sequence():
+#     num = 0
+#     while True:
+#         yield num
+#         num += 1
 
 
-for i in infinite_sequence():
-    print(i)
+# for i in infinite_sequence():
+#     print(i)
+
+def mygenerator():
+    print('First item')
+    yield 10
+
+    print('Second item')
+    yield 20
+
+    print('Last item')
+    yield 30
+
+gen = mygenerator()
+next(gen)
+next(gen)
+next(gen)

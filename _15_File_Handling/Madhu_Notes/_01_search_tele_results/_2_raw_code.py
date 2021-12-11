@@ -13,23 +13,23 @@ with open('phone_dataset.csv', 'r') as csv_data:
             dataset.append(each.strip())
         mobile_data.append(dataset)
 print(mobile_data)
-with open('query.txt','r') as t:
+with open('query.txt', 'r') as t:
     input_data = t.read()
 new = input_data.split('\n')
-sys.stdout=open("output.txt","w")
+sys.stdout = open("output.txt", "w")
 for each in new:
-    print('Matches for:',each)
+    print('Matches for:', each)
     count = 0
     for lst in mobile_data:
         if each in lst:
             count += 1
             if bool(re.search(r'\d', lst[2])):
-                lst[2],lst[3] = lst[3],lst[2]
+                lst[2], lst[3] = lst[3], lst[2]
                 if lst[3].isnumeric():
                     lst[3] = re.sub(r'(\d{3})(\d{3})(\d{4})', r'(\1) \2-\3', lst[3])
-                output = print('Result',count,':',lst[0],',',lst[1],',',lst[2],',',lst[3])
+                output = print('Result', count, ':', lst[0], ',', lst[1], ',', lst[2], ',', lst[3])
             else:
-                output = print('Result',count,':',lst[0],',',lst[1],',',lst[2],',',lst[3])
+                output = print('Result', count, ':', lst[0], ',', lst[1], ',', lst[2], ',', lst[3])
     else:
         if count == 0:
             print('No results found')

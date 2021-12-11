@@ -1,12 +1,12 @@
 print("--------------------------- Indexing ----------------------------")
-lst = [10, [20, 30, 40], (50, 60, 70), {9, 10, 11}, {1:'x', 2:'y'}]
+lst = [10, [20, 30, 40], (50, 60, 70), {9, 10, 11}, {1: 'x', 2: 'y'}]
 print("List of all items", lst)
 print("List of 0th index", lst[0])
 print("List of 1st index", lst[1])
 print("List of 1st index 1st element", lst[1][1])
 print("List of 2nd index", lst[2])
-print("List of 2nd index 1st element",lst[2][1])
+print("List of 2nd index 1st element", lst[2][1])
 print("List of 3rd index", lst[3])
-#print(lst[3][1])
+# print(lst[3][1])
 print("List of 4th index", lst[-1])
 print("List of 4th index 1st element", lst[4][1])

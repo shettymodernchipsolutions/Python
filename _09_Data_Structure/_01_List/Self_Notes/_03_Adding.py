@@ -26,7 +26,7 @@ print("List of all elements: ", lst)
 lst.append(60)
 print("Using append: ", lst)
 lst.extend([70, 80, 90])
-print("List after extending elementslst)
+print("List after extending elements", lst)
 
 lst = [10, 20, 30, 40, 50]
 print(lst)

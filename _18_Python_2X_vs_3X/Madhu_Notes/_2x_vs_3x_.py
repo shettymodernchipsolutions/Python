@@ -124,11 +124,12 @@ Output in Python 3.x (Unicode and str are same)
 # 2.x    range --> Iterator  xrange  --> generator
 # 3.x    range --> Generator
 print("======range===========")
-#for x in xrange(1, 5):
+# for x in xrange(1, 5):
 
-	#print(x),
+# print(x),
 
 for x in range(1, 5):
+
 
 	print(x),
 
@@ -174,7 +175,9 @@ SyntaxError: invalid syntax
 
 
 try:
+
     raise NameError("Name error raised")
+
 except NameError as err:  # NameError,  err
     print(err, 'Error Caused')
 

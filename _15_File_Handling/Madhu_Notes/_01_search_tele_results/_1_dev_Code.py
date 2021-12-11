@@ -3,23 +3,29 @@ import csv
 import re
 
 # To update number in US number format if given as plain number
+
+
 def _update_num(mob_num):
     upd_num = '(%s) %s-%s' % tuple(re.findall(r'\d{4}$|\d{3}', mob_num))
     return upd_num
 
 # Retrieve each user record and swap if mobile number is in 3rd position
+
+
 def _get_user_data(user_data):
-    print("User data : ",user_data)
-    is_num = any(char.isdigit() for char in user_data[2]) # any all in python
+    print("User data : ", user_data)
+    is_num = any(char.isdigit() for char in user_data[2])  # any all in python
     if is_num:
         if user_data[2].isnumeric():
-            num_formt =  _update_num(user_data[2])
+            num_formt = _update_num(user_data[2])
             # num_formt = '(%s) %s-%s' % tuple(re.findall(r'\d{4}$|\d{3}', user_data[2]))
             user_data[2] = num_formt
         user_data[2], user_data[3] = user_data[3], user_data[2] 
     return user_data
 
 # Write data to output.txt file
+
+
 def _write_data_to_file(fname, phone_data,out_file):
     heading = "Matches for: "+fname
     out_file.write(heading)
@@ -36,6 +42,8 @@ def _write_data_to_file(fname, phone_data,out_file):
     out_file.write('\n')
 
 # Read data from csv file
+
+
 def read_data_from_csv():  
     phone_data = {}
     with open('phone_dataset.csv') as file_obj:
@@ -46,20 +54,22 @@ def read_data_from_csv():
             print(row)
             phone_data[counter] = _get_user_data(row[0].split(','))
             counter += 1
-        print("Phone data : ",phone_data)
+        print("Phone data : ", phone_data)
     return phone_data
 
 # Read query names from text and write end result  to out text file
+
+
 def write_data_to_txt(p_data):
     with open('query.txt') as in_data:
         names = in_data.readlines()
-        #content = [x.rstrip() for x in names]
+        # content = [x.rstrip() for x in names]
         content = []
         for x in names:
             content.append(x.rstrip())
 
-        print("---Search names : ",content)
-        out_file = open("output.txt","w") 
+        print("---Search names : ", content)
+        out_file = open("output.txt", "w")
         for first_name in content:
             _write_data_to_file(first_name, p_data, out_file)
 

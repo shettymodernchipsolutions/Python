@@ -243,39 +243,190 @@ print('The string is: ', x)
 # A python program to know how to define one function inside another function.
 
 
-def display(n):
-    def message():
-        return 'Dear'
+# def display(n):
+#     def message():
+#         return 'Dear'
+#
+#     result = n + message()
+#     return result
+#
+#
+# x = display('Hi ')
+# print(x)
+#
 
-    result = n + message()
+
+def display(str):
+    return str + 'Krishna'
+
+
+x = display('Hare ')
+print('X : ', x)
+
+
+def maths(m, n):
+    p = m + n
+    q = m - n
+    r = m * n
+    s = m / n
+    return p, q, r, s
+
+
+a = maths(10, 5)
+
+for i in a:
+    print('The results are: ', i)
+
+
+def display(str):
+    def message():
+        return 'How are you? '
+
+    result = message() + str
     return result
 
 
-x = display('Hi ')
+print(display('Hare '))
+
+
+def deer(str):
+    return str + 'Shetty'
+
+
+e = deer('Bhavesh V ')
+print('Name: ', e)
+
+
+def guy(ysd):
+    def the():
+        return ' Kauravas'
+
+    return ysd + the()
+
+
+print(guy('Pandavas'))
+
+
+# def hate():
+#     return 'I am a'
+#
+#
+# def jus(ha):
+#     return ha + ' Python developer'
+#
+#
+# print(jus(hate()))
+#
+#
+# def get(push):
+#     return push + '3:"Python"'
+#
+#
+# def put():
+#     return '1:"C", 2:"Java", '
+#
+#
+# print(get(put()))
+#
+#
+def hat():
+    def hit():
+        return 'Hello World!'
+
+    return hit
+
+
+x = hat()
+print(x())
+
+
+def got(tr):
+    return tr + 'Dear'
+
+
+x = got('Hi ')
 print(x)
 
 
+def give(er):
+    def take():
+        return 'GOt it'
+
+    return 'I ' + take() + er
 
 
+we = give('d')
+print(we)
 
 
+def attach(s1, s3):
+    s3 = s1 + s3
+    print("Entered string is: ", s3)
 
 
+attach('New', ' Delhi')
 
 
+def define(x):
+    x = 15
+    print(x, id(x))
 
 
+x = 10
+define(x)
+print(x, id(x))
 
 
+def rate(f):
+    lst.append(50)
+    lst.append(60)
+    print(lst, id(lst))
 
 
+lst = [10, 20, 30, 40]
+rate(lst)
+print(lst, id(lst))
 
 
+def ims(lit):
+    lst = [5, 6, 7]
+    print(lst, id(lst))
 
 
+lst = [1, 2, 3, 4]
+ims(lst)
+print(lst, id(lst))
 
 
+def str(s1, s2):
+    s3 = s1 + s2
+    print(s3)
 
 
-def display(n):
-    def message():
+str('Hi ', 'Hello')
+
+
+def sum(farg, *args):
+    print('The formal argument: ', farg)
+    sum = 0
+    for i in args:
+        sum += i
+    print('The sum is: ', (sum + farg))
+
+
+sum(10, 20)
+sum(10, 20, 30, 40, 50)
+
+
+def add(farg, *args):
+    print('The formal argument: ', farg)
+    sum = 0
+    for i in args:
+        sum += i
+    print('The total  sum is: ', sum + farg)
+
+
+add(10, 20, 30, 40)
+add(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+
+

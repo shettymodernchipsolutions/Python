@@ -21,9 +21,6 @@ whenever needed. By using append() and remove() respectively.
 #
 
 
-
-
-
 # lst = [10, 20, 30, 40, 50, 60, 70]
 #
 # for i in lst:
@@ -76,7 +73,6 @@ whenever needed. By using append() and remove() respectively.
 # print(lst)
 
 
-
 # lst = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 # print(lst)
 # del lst[3]
@@ -113,9 +109,6 @@ print(id(lst1))
 print(id(lst2))
 print(lst1 is lst2)
 
-
-
-
 # lst = [10, 20, 30, 40, 50]
 # print(len(lst))
 # print(max(lst))
@@ -130,7 +123,7 @@ print(lst1 is lst2)
 # for i,j in enumerate(lst):
 #     print(i, j)
 
-#lst = [10, 20, 30, 40, 50, 20]
+# lst = [10, 20, 30, 40, 50, 20]
 
 # print(lst)
 # print(lst.count(20))
@@ -144,3 +137,97 @@ print(lst1 is lst2)
 # lst.clear()
 # print(lst)
 
+
+lst = [10, 20, 30, 40, 50]
+print('Total list: ', lst)
+print('First element = %d, Last element = %d' % (lst[0], lst[4]))
+
+str = ['dilip', 'vaani', 'harish', 'harsha', 'akash']
+print('string elementS: ', str)
+print('First String Element = %s, Last string Element = %s' % (str[0], str[4]))
+
+dec = [2, 5, 2.3, 6, 45.7, 89, 5.7]
+print('Decimal Elements: ', dec)
+print('First Decimal Element = %d, Last Decimal Element = =%s' % (dec[0], dec[6]))
+
+gti = [10, 20, 30, 40, 50]
+print('The list elements are : ', gti)
+print('First Element = %d, Last Element = %d' % (gti[0], gti[4]))
+
+tghi = ['dkadk', 'bcjadb', 'nbdakb', 'hbadkhhb', 'davkvh']
+print('The String elements are: ', tghi)
+print('First Elements  = %s, Last Elements = %s' % (tghi[0], tghi[4]))
+
+ced = [2, 5, 3, 3.45, 8.64, 9]
+print('Ced elements are: ', ced)
+print('First element = %s, Last Element = %s' % (ced[0], ced[5]))
+
+# A python program to create list using range() function
+
+list1 = range(10)
+for i in list1:
+    print(i, ',', end=' ')
+print()
+
+list2 = range(5, 10)
+for i in list2:
+    print(i, ', ', end=' ')
+print()
+
+list3 = range(5, 20, 2)
+for i in list3:
+    print(i, ', ', end=' ')
+print()
+
+# A python program to access list elements using loops
+
+lst = [10, 20, 30, 40, 50]
+print('Using while loop')
+i = 0
+while i < len(lst):
+    print(lst[i])
+    i += 1
+
+print('Using for loop')
+for i in lst:
+    print(i)
+
+lst = [10, 20, 30, 40, 50]
+print('Using while loop')
+i = 0
+while i < len(lst):
+    print(lst[i])
+    i += 1
+
+print('Using for loop')
+for i in lst:
+    print(i)
+
+day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+print(day)
+print('In reverse order')
+i = 0
+i = len(day) - 1
+while i >= 0:
+    print(day[i])
+    i -= 1
+
+print('In reverse order')
+i = -1
+while i >= -len(day):
+    print(day[i])
+    i -= 1
+
+deas = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+print(deas)
+print('In reverse order')
+i = len(deas) - 1
+while i >= 0:
+    print(deas[i])
+    i -= 1
+
+print('In reverse order')
+i = -1
+while i >= -len(deas):
+    print(deas[i])
+    i -= 1
