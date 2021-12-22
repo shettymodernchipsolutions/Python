@@ -430,3 +430,118 @@ add(10, 20, 30, 40)
 add(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
 
 
+def bkabd(tyi):
+    return tyi + 'Good Morning!'
+
+
+a = bkabd('Krishna! ')
+print(a)
+
+
+def display(rewst):
+    def message():
+        return 'Gastric '
+
+    result = rewst + message() + 'Problem'
+    return result
+
+
+print(display("Tips for "))
+
+
+def message(str):
+    return str + 'Dear'
+
+
+def display():
+    return 'Hai '
+
+
+print(message(display()))
+
+
+def modify(x):
+    x = 15
+    print(x)
+
+
+x = 10
+modify(x)
+print(x)
+
+
+def sadad():
+    def vxfvz():
+        return 'Johnny '
+
+    return vxfvz
+
+
+a = sadad()
+print(a())
+
+
+def maths(m, n):
+    a = m + n
+    b = m - n
+    c = m * n
+    d = m / n
+    return a, b, c, d
+
+
+t = maths(10, 5)
+
+print('Using Loops: ')
+for i in t:
+    print(i)
+
+
+def display(str):
+    return str + 'How are you?'
+
+
+x = display('Krishna, ')
+print("Entered string: ", x)
+
+
+def gjlkg(str):
+    def bjksb():
+        return 'How are you? '
+
+    c = str + bjksb() + 'Dear'
+    return c
+
+
+print(gjlkg('Hi '))
+
+
+def display(srt):
+    return srt + 'Have a good day'
+
+
+def message():
+    return 'Good morning! '
+
+
+print(display(message()))
+
+
+def gkhsg():
+    def bdajl():
+        return 'bdsjl bjsb'
+
+    result = bdajl() + 'jbgajbhkb'
+    return result
+
+
+x = gkhsg()
+print(x)
+
+
+def modify(lst):
+    lst = [45, 56, 644]
+    print(lst)
+
+lst = [1, 2, 3, 4]
+modify(lst)
+print(lst)
