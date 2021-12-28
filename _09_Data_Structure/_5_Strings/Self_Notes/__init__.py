@@ -14,8 +14,8 @@
 
 # s = 'Practice makes Perfect'
 # print(s)
-#s = 'Practice makes 'Perfect''
-#print(s)
+# s = 'Practice makes 'Perfect''
+# print(s)
 #
 # s = 'Practice makes "Perfect"'
 # print(s)
@@ -235,10 +235,63 @@
 # else:
 #     print("String values are not equal")
 
-s1 = "python"
-s2 = "PYTHON"
+# s1 = "python"
+# s2 = "PYTHON"
+#
+# if s1.upper() == s2.upper():
+#     print("String values are equal.")
+# else:
+#     print("String values are not equal")
+#
+# char = 'Bhavesh V Shetty'
+#
+# n = len(char)
+#
+# i = 0
+#
+# while i < n:
+#     print(char[i], end=' ')
+#     i += 1
+#
+# print()
+#
+# i = -1
+#
+# while i >= -n:
+#     print(char[i], end=' ')
+#     i -= 1
+#
+# print()
+#
+# i = 1
+#
+# while i <= n:
+#     print(char[-i], end=' ')
+#     i += 1
+#
+# st = 'Core Python'
+#
+# t = len(st)
+#
+# i = 0
+#
+# while i < t:
+#     print(st[i], end=' ')
+#     i += 1
+#
+# print()
+#
+# i = -1
+#
+# while i >= -t:
+#     print(st[i], end=' ')
+#     i -= 1
+#
+# print()
+#
+# i = 1
+#
+# while i <= t:
+#     print(st[-i], end=' ')
+#     i += 1
 
-if s1.upper() == s2.upper():
-    print("String values are equal.")
-else:
-    print("String values are not equal")
