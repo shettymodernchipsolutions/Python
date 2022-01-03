@@ -1,4 +1,5 @@
 # A program to access each element of a string in forward and reverse orders using while loop
+
 char = 'Bhavesh V Shetty'
 
 n = len(char)
@@ -25,11 +26,11 @@ while i <= n:
     print(char[-i], end=' ')
     i += 1
 
-
 # A program to access character of a string using for loop
 
 str = 'Core Python'
 
+print()
 for i in str:
     print(i, end=' ')
 
@@ -37,7 +38,6 @@ print()
 
 for i in str[::-1]:
     print(i, end=' ')
-
 
 # A python program to know whether a sub string exists in main string or not
 
@@ -47,7 +47,6 @@ if sub in char:
     print(sub + ' is found in main string')
 else:
     print(sub + ' not found in main string')
-
 
 # A program to find the first occurence of sub string in a given main string.
 
@@ -61,17 +60,6 @@ if n == -1:
 else:
     print('Sub string is found at position', n + 1)
 
-stat = input('Enter the string: ')
-ghy = input("Enter the string: ")
-
-n = stat.find(ghy, 0, len(stat))
-
-if n == -1:
-    print("Sub string is not found")
-else:
-    print("Sub sting is found at position", n + 1)
-
-
 # A Python program to find the first occurence of sub string in a given main string using index() method.
 
 char = input("Enter the string: ")
@@ -83,18 +71,6 @@ except ValueError:
     print("Entered string is not found")
 else:
     print("Sub string is found at position ", n + 1)
-
-
-
-char = input("Enter the string: ")
-chr = input("Enter the sub string: ")
-
-try:
-    n = char.index(chr, 0, len(char))
-except ValueError:
-    print("Sub string is not found")
-else:
-    print("Sub string is found at position", n + 1)
 
 
 # A Python program to display all positions of a sub string in a given main string.
@@ -118,116 +94,6 @@ while i < n:
 if flag == False:
     print("Sub string is not found")
 
-
-char = 'Core Python'
-
-n = len(char)
-
-i = 0
-
-while i < n:
-    print(char[i], end=' ')
-    i += 1
-
-print()
-
-i = -1
-
-while i >= -n:
-    print(char[i], end=' ')
-    i -= 1
-
-print()
-
-i = 1
-
-while i <= n:
-    print(char[-i], end=' ')
-    i += 1
-
-print()
-
-char = 'Core Python'
-
-for i in char:
-    print(i, end=' ')
-
-print()
-
-for i in char[::-1]:
-    print(i, end=' ')
-
-print()
-
-str = input("Enter the string: ")
-sub = input("Enter the string: ")
-
-if sub in str:
-    print(sub + ' string found in str')
-else:
-    print(sub + ' string not found in str')
-
-print()
-
-char = input('Enter a string: ')
-chr = input('Enter a sub string: ')
-
-n = char.find(chr, 0, len(char))
-
-if n == -1:
-    print("Sub string not found")
-else:
-    print("Sub string found at position ", n + 1)
-
-
-char = input("Enter a string: ")
-chr = input("Enter a string: ")
-
-try:
-    n = char.index(chr, 0, len(char))
-except ValueError:
-    print("Sub string not found")
-else:
-    print("Sub string found at position", n + 1)
-
-char = input("Enter a string: ")
-chr = input("Enter a sub string: ")
-
-n = len(char)
-flag = False
-i = 0
-
-while i < n:
-    pos = char.find(chr, i, n)
-    if pos != -1:
-        print('Sub string found at position: ', pos + 1)
-        i = pos + 1
-        flag = True
-    else:
-        i += 1
-
-if flag == False:
-    print('Sub string not found')
-
-
-
-char = input("Enter a string: ")
-chr = input("Enter a sub string: ")
-
-flag = False
-i = 0
-n = len(char)
-
-while i < n:
-    pos = char.find(chr, i, n)
-    if pos != -1:
-        print("Sub string found at position ", pos + 1)
-        i = pos + 1
-        flag = True
-    else:
-        i += 1
-if flag == False:
-    print("Sub string not found")
 
 # A Python program to display all positions of a sub string in a given main string.
 
@@ -267,12 +133,10 @@ while True:
 if flag == False:
     print("Sub string not found")
 
-
 s = '     I am a Python Developer       '
 print(s.lstrip())
 print(s.rstrip())
 print(s.strip())
-
 
 # A Python program to accept and display a group of numbers.
 
@@ -299,7 +163,6 @@ print(str)
 
 str = 'Python is the future'
 print(str.title())
-
 
 str = 'Delhi999'
 
@@ -333,7 +196,6 @@ print(str.isascii())
 print(str.isdigit())
 print(str.istitle())
 
-
 id = 10
 name = 'Shankar'
 sal = 19500.75
@@ -348,7 +210,6 @@ sal = 19500.75
 str = 'id = {0} \nname = {2} \nsal = {1}'.format(id, name, sal)
 
 print(str)
-
 
 # A Python program to know the type of character entered by the user.
 
@@ -379,13 +240,11 @@ n = str.split(' ')
 for i in n:
     print(i)
 
-
 str = ['one', 'two', 'three']
 
 str1 = ' '.join(str)
 
 print(str1)
-
 
 # A Python program to sort the group of string into alphabetical order.
 
@@ -403,7 +262,6 @@ print('Sorted string: ')
 
 for i in str1:
     print(i)
-
 
 # A Python program to search for a string in a given group of string.
 
@@ -427,7 +285,6 @@ for i in range(len(str)):
 if flag == False:
     print('String not found')
 
-
 # A Python program to find the length of a string without using len() function.
 
 str = input('Enter the string: ')
@@ -440,7 +297,6 @@ for s in str:
     i += 1
 
 print('\nThe length of th string: ', i)
-
 
 # A Python program to find the number of words in a string.
 

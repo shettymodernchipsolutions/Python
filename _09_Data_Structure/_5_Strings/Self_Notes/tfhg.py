@@ -295,8 +295,6 @@
 #     print(st[-i], end=' ')
 #     i += 1
 
-<<<<<<< HEAD
-=======
 # # A program to access each element of a string in forward and reverse orders using while loop
 # char = 'Bhavesh V Shetty'
 #
@@ -615,7 +613,6 @@
 #     print("Sub string not found")
 
 
-
 # s = '     I am a Python Developer       '
 # print(s.lstrip())
 # print(s.rstrip())
@@ -636,3 +633,64 @@
 #
 # str = str.upper()
 # str = str.lower()
+
+
+# A Python program to find the length of a string without using len() function.
+
+# str = input('Enter the string: ')
+#
+# s = 0
+#
+# for i in str:
+#     print(str[s], end='')
+#     s += 1
+#
+# print('\nNo. of characters: ', s)
+
+# A Python program to find the number of words in a string.
+
+# str = input('Enter the no. of words to count: ')
+#
+# i = c = 0
+# flag = True
+# for s in str:
+#     if flag == False and str[i] == ' ':
+#         c += 1
+#     elif str[i] == ' ':
+#         flag = True
+#     else:
+#         flag = False
+#     i += 1
+#
+# print('No. of words: ', c + 1)
+
+# print(len(str.split()))
+
+
+# A Python program to insert a sub string in a string in a particular position.
+
+# str = input('Enter a string: ')
+# sub = input('Enter a sub string: ')
+# n = int(input('Enter the position: '))
+#
+# n -= 1
+#
+# l1 = len(str)
+# l2 = len(sub)
+#
+# str1 = []
+#
+# for i in range(n):
+#     str1.append(str[i])
+#
+# for i in range(l2):
+#     str1.append(sub[i])
+#
+# for i in range(n, l1):
+#     str1.append(str[i])
+#
+# str1 = ''.join(str1)
+#
+# print(str1)
+
+
