@@ -238,14 +238,129 @@
 
 # A Python program to show variable length argument and its use.
 
-def sum(farg, *args):
-    print('Formal argument: ', farg)
+# def sum(farg, *args):
+#     print('Formal argument: ', farg)
+#
+#     sum = 0
+#     for i in args:
+#         sum += i
+#     print('Sum: ', farg + sum)
+#
+#
+# sum(5, 10)
+# sum(5, 10, 15, 20)
 
-    sum = 0
-    for i in args:
-        sum += i
-    print('Sum: ', farg + sum)
+
+# A Python program to understand keyword variable argument.
+
+# def display(farg, **kwargs):
+#     print('Formal argument: ', farg)
+#
+#     for x, y in kwargs.items():
+#         print('key = {}, value = {}'.format(x, y))
+#
+# display(5, rno = 10)
+# print()
+# display(5, rno = 10, name = 'Prakash')
 
 
-sum(5, 10)
-sum(5, 10, 15, 20)
+# A Python program to understand local variables and global variables.
+
+# a = 1
+#
+#
+# def myfunction():
+#     a = 2
+#     print('a = ', a)
+#
+#
+# myfunction()
+# print('a = ', a)
+
+
+# A Python program to access global variable inside a function and modify it.
+
+# a = 1
+# def myfunction():
+#     global a
+#     print('global a = ', a)
+#     a = 2
+#     print('modified a = ', a)
+#
+# myfunction()
+# print('global a = ', a)
+
+
+# A Python program to get a copy of global variable into a function and work with it.
+
+# a = 1
+#
+#
+# def myfunction():
+#     a = 2
+#     x = globals()['a']
+#     print('global var a = ', x)
+#     print('local var a = ', a)
+#
+#
+# myfunction()
+# print('global var a = ', a)
+
+
+# A function to accept a group of numbers and find their total average.
+
+# def calculate(lst):
+#     n = len(lst)
+#     sum = 0
+#     for i in lst:
+#         sum += i
+#         avg = sum / n
+#         return sum, avg
+#
+#
+# print('Enter numbers seperated by space: ')
+# lst = [int(x) for x in input().split()]
+#
+# x, y = calculate(lst)
+# print('Total: ', x)
+# print('Average: ', y)
+
+
+# A function to display a group of strings.
+
+# def display(lst):
+#     for i in lst:
+#         print(i)
+#
+#
+# print('Enter strings seperated by comma: ')
+# lst = [x for x in input().split(',')]
+#
+# display(lst)
+
+
+# A Python program to calculate factorial values using recursion.
+
+# def factorial(n):
+#     if n == 0:
+#         result = 1
+#     else:
+#         result = n * factorial(n - 1)
+#     return result
+#
+# for i in range(1, 11):
+#     print('Factorial of {} is {}'.format(i, factorial(i)))
+
+# A Python program to solve towers of hanoi problem.
+
+# def towers(n, a, c, b):
+#     if n == 1:
+#         print('Move disk %i from pole %s to pole %s' %(n, a, c))
+#     else:
+#         towers(n - 1, a, b, c)
+#         print('Move disk %i from pole %s to pole %s' %(n, a, c))
+#         towers(n - 1, b, c, a)
+#
+# n = int(input('Enter number of disks: '))
+#
+# towers(n, 'A', 'C', 'B')
