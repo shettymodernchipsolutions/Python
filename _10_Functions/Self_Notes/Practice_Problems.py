@@ -4,8 +4,9 @@
 #     c = a + b
 #     print('Sum: ', c)
 #
-# sum(10, 5)
+# sum(10, 25)
 # sum(10.5, 7.5)
+
 
 # A Python program to find the sum of two numbers and return the result from the function.
 
@@ -13,47 +14,39 @@
 #     c = a + b
 #     return c
 #
-#
-# def main():
-#     x = sum(10, 5)
-#     print('Sum: ', x)
-#     y = sum(10.5, 5.5)
-#     print('Sum: ', y)
-#
-#
-# main()
-
+# x = sum(10, 5)
+# print('The sum is: ', x)
+# y = sum(10.5, 5.5)
+# print('The sum is: ', y)
 
 # A function to test whether a number is even or odd
 
-# def num_odd_or_even(n):
+# def even_odd(n):
 #     if n % 2 == 0:
-#         print('Entered number is even.')
+#         print('Number is even.')
 #     else:
-#         print('Entered number is odd.')
+#         print('Number is odd')
 #
-# num_odd_or_even(2453424)
-# num_odd_or_even(12321)
-
+# even_odd(43151354)
+# even_odd(43626735)
 
 # A Python program to calculate factorial values of numbers.
 
 # def fact(n):
 #     prod = 1
-#
 #     while n >= 1:
 #         prod *= n
 #         n -= 1
 #     return prod
 #
-# for i in range(1, 11):
-#     print('Factorial of {} is {}'.format(i, fact(i)))
+#
+# for i in range(1, 12):
+#     print('The factorial of {} is {}'.format(i, fact(i)))
 
 # A Python function to check whether a given number is prime or not.
 
 # def prime(n):
 #     x = 1
-#
 #     for i in range(2, n):
 #         if n % i == 0:
 #             x = 0
@@ -62,7 +55,7 @@
 #             x = 1
 #     return x
 #
-# num = int(input('Enter a number: '))
+# num = int(input('Enter the number: '))
 #
 # result = prime(num)
 #
@@ -70,34 +63,32 @@
 #     print('Entered number is prime.')
 # else:
 #     print('Entered number is not prime.')
-#
-
 
 # A Python program that generates prime numbers using functions to test prime or not.
 
 # def prime(n):
 #     x = 1
-#
 #     for i in range(2, n):
 #         if n % i == 0:
 #             x = 0
 #             break
 #         else:
 #             x = 1
-#         return x
+#     return x
 #
-# num = int(input("Enter the number: "))
 #
-# i = 2
+# num = int(input('Enter the range of prime numbers: '))
 # c = 1
+# i = 2
+#
 # while True:
 #     if prime(i):
 #         print(i)
 #         c += 1
 #     i += 1
+#
 #     if c > num:
 #         break
-
 
 # A Python program to understand how a function returns two values.
 
@@ -106,10 +97,11 @@
 #     d = a - b
 #     return c, d
 #
+#
 # x, y = sum_sub(10, 5)
 #
-# print('Result of addition: ', x)
-# print('Result of subtraction: ', y)
+# print('Result of Addition: ', x)
+# print('Result of Subtraction: ', y)
 
 # A function that returns the results of addition, subtraction, multiplication and division.
 
@@ -120,6 +112,7 @@
 #     f = a / b
 #     return c, d, e, f
 #
+#
 # t = sum_sub_mul_div(10, 5)
 #
 # print('The results are: ')
@@ -128,38 +121,44 @@
 
 # A Python program to see how to assign a function to a variable.
 
-# def display(str):
-#     return 'Hai ' + str
+# def string(fun):
+#     return fun + 'is the best language in the world.'
 #
-# x = display('Krishna')
-# print('After assigning function to a variable: ', x)
+#
+# x = string('Python ')
+# print(x)
 
 # A Python program to know how to define a function inside another function.
 
 # def display(str):
 #     def message():
-#         return 'How are you? '
-#     result = message() + str
-#     return result
+#         return 'How are you?'
 #
-# print(display('Krishna'))
+#     return str + message()
+#
+#
+# print(display('Krishna, '))
 
 # A Python program to know how to pass a function as parameter to another function.
 
-# def display(fun):
-#     return 'Hai, ' + fun
+# def string(str):
+#     return str + 'is the trending job in the 20th century.'
+#
 #
 # def message():
-#     return 'How are you?'
+#     return 'Data Science '
 #
-# print(display(message()))
+#
+# print(string(message()))
 
 # A Python program to know how a function can return another function.
 
 # def display():
 #     def message():
-#         return 'How are you?'
+#         return 'I am a Python Developer.'
+#
 #     return message()
+#
 #
 # fun = display()
 # print(fun)
@@ -173,3 +172,80 @@
 # x = 10
 # modify(x)
 # print(x, id(x))
+
+# A Python program to pass a list to a function and modify it.
+
+# def data(lst):
+#     lst = [40, 50, 60]
+#     print(lst, id(lst))
+#
+# lst = [10, 20, 30]
+# data(lst)
+# print(lst, id(lst))
+
+# def data(lst):
+#     lst.append(40)
+#     print(lst, id(lst))
+#
+#
+# lst = [10, 20, 30]
+# data(lst)
+# print(lst, id(lst))
+
+
+# A Python program to create a new object inside the function does not modify outside object.
+
+# def data(lst):
+#     lst = [40, 50, 60]
+#     print(lst, id(lst))
+#
+#
+# lst = [10, 20, 30]
+# data(lst)
+# print(lst, id(lst))
+
+
+# A Python program to understand the positional argument of a function.
+
+# def pos_arg(s1, s2):
+#     s3 = s1 + s2
+#     print('The argument is: ', s3)
+#
+#
+# pos_arg('New ', 'York')
+
+
+# A Python program to understand the keyword argument of a function.
+
+# def grocery(item, price):
+#     print('Items: ', item)
+#     print('Price: ', price)
+#
+#
+# grocery(item='Rice', price=88)
+# grocery(price=90, item='Imperial Blue')
+
+
+# A Python program to understand the use of default arguments in a function.
+
+# def grocery(item, price=50):
+#     print('Item: ', item)
+#     print('Price: ', price)
+#
+#
+# grocery(item='Sunflower Oil', price=125)
+# grocery(item='Flour')
+
+# A Python program to show variable length argument and its use.
+
+def sum(farg, *args):
+    print('Formal argument: ', farg)
+
+    sum = 0
+    for i in args:
+        sum += i
+    print('Sum: ', farg + sum)
+
+
+sum(5, 10)
+sum(5, 10, 15, 20)
