@@ -369,12 +369,80 @@
 # A Python program to create a lambda function that returns a square value of a given number.
 
 # f = lambda x : x * x
-# value = f(78)
+# value = f(8701)
 # print('Value = ', value)
-
 
 # A Python program to calculate the sum of two numbers.
 
-f = lambda x, y : x + y
-value = f(23.4231, 423.312315)
-print('Value = ', value)
+# f = lambda x, y : x + y
+# value = f(324.784307, 78032.78031)
+# print('Value = ', value)
+
+# A lambda function to find the bigger number in two given number.
+
+# max = lambda x, y : x if x > y else y
+# a, b = [int(n) for n in input('Enter two number: ').split(',')]
+# print('Biggest number: ', max(a, b))
+
+# big = lambda x, y: x if x > y else y
+# a, b = [int(n) for n in input('Enter two number: ').split(',')]
+# print('Biggest number: ', big(a, b))
+
+# A Python program using filter() to filter out even numbers from a list.
+
+# def even(x):
+#     if x % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+#
+# lst = [1, 2, 3, 4, 5, 6, 76, 8, 4, 71839, 714809, 64319, 5268, 64290, 693278, 61379, 74280, 679563]
+# print('Entered list items: ', lst)
+#
+# lst1 = list(filter(even, lst))
+# print('Extracted even numbers: ', lst1)
+
+# A lambda that returns even numbers from a list.
+
+# lst = [132, 315, 31, 4426, 43, 472]
+# print('Entered list items: ', lst)
+# lst1 = list(filter(lambda x: (x % 2 == 0), lst))
+# print('Extracted even numbers: ', lst1)
+
+
+# A Python program to find squares of elements in a list.
+
+# def square(x):
+#     return x * x
+#
+#
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print('Entered list elements: ', lst)
+# lst1 = list(map(square, lst))
+# print('Square of all list elements: ', lst1)
+
+
+# A lambda function that returns squares of a list.
+
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print('Find the squares of all list elements: ', lst)
+# lst1 = list(map(lambda x : (x * x), lst))
+# print('Square of all list elements: ', lst1)
+
+# A Python program to find the products of elements of two different lists using lambda function.
+
+# lst1 = [1, 2, 3, 4, 5]
+# lst2 = [10, 20, 30, 40, 50]
+# lst3 = list(map(lambda x, y : x * y, lst1, lst2))
+# print('Product of two list elements: ', lst3)
+
+# A lambda function to calculate products of elements in a list.
+
+# from functools import *
+#
+# lst = [1, 2, 3, 4, 5]
+# lst1 = reduce(lambda x, y: x * y, lst)
+# print(lst1)
+
+# A decora
