@@ -165,12 +165,13 @@
 
 # A Python program to pass an integer to a function and modify it.
 
-# def modify(x):
+# def data(x):
 #     x = 15
 #     print(x, id(x))
 #
+#
 # x = 10
-# modify(x)
+# data(x)
 # print(x, id(x))
 
 # A Python program to pass a list to a function and modify it.
@@ -218,8 +219,8 @@
 # A Python program to understand the keyword argument of a function.
 
 # def grocery(item, price):
-#     print('Items: ', item)
-#     print('Price: ', price)
+#     print('Items: %s' % item)
+#     print('Price: %.2f' % price)
 #
 #
 # grocery(item='Rice', price=88)
@@ -238,18 +239,16 @@
 
 # A Python program to show variable length argument and its use.
 
-# def sum(farg, *args):
-#     print('Formal argument: ', farg)
+# def display(forArg, **kwargs):
+#     print('Formal Arguments: ', forArg)
 #
-#     sum = 0
-#     for i in args:
-#         sum += i
-#     print('Sum: ', farg + sum)
+#     for x, y in kwargs.items():
+#         print('keys = {} and values = {}'.format(x, y))
 #
 #
-# sum(5, 10)
-# sum(5, 10, 15, 20)
-
+# display(5, rno=10)
+# print()
+# display(5, rno=10, name='Prakash')
 
 # A Python program to understand keyword variable argument.
 
@@ -269,7 +268,22 @@
 # a = 1
 #
 #
+# def local():
+#     a = 2
+#     print('a = ', a)
+#
+#
+# local()
+# print('a = ', a)
+
+# A Python program to access global variable inside a function and modify it.
+
+# a = 1
+#
+#
 # def myfunction():
+#     global a
+#     print('a = ', a)
 #     a = 2
 #     print('a = ', a)
 #
@@ -277,64 +291,48 @@
 # myfunction()
 # print('a = ', a)
 
-
-# A Python program to access global variable inside a function and modify it.
-
-# a = 1
-# def myfunction():
-#     global a
-#     print('global a = ', a)
-#     a = 2
-#     print('modified a = ', a)
-#
-# myfunction()
-# print('global a = ', a)
-
-
 # A Python program to get a copy of global variable into a function and work with it.
 
 # a = 1
 #
-#
-# def myfunction():
+# def display():
 #     a = 2
 #     x = globals()['a']
 #     print('global var a = ', x)
 #     print('local var a = ', a)
 #
-#
-# myfunction()
+# display()
 # print('global var a = ', a)
-
 
 # A function to accept a group of numbers and find their total average.
 
-# def calculate(lst):
+# def sum(lst):
 #     n = len(lst)
 #     sum = 0
 #     for i in lst:
 #         sum += i
 #         avg = sum / n
-#         return sum, avg
+#         return avg, sum
 #
 #
-# print('Enter numbers seperated by space: ')
+# print('Enter the numbers seperated by space: ')
 # lst = [int(x) for x in input().split()]
 #
-# x, y = calculate(lst)
-# print('Total: ', x)
-# print('Average: ', y)
+# x, y = sum(lst)
+# print('Average: ', x)
+# print('Sum: ', y)
 
 
 # A function to display a group of strings.
 
-# def display(lst):
-#     for i in lst:
+# def display(str):
+#     for i in str:
 #         print(i)
 #
 #
-# print('Enter strings seperated by comma: ')
-# lst = [x for x in input().split(',')]
+# print('Enter the group of strings: ')
+# lst = [x for x in input().split()]
+#
 #
 # display(lst)
 
@@ -348,19 +346,35 @@
 #         result = n * factorial(n - 1)
 #     return result
 #
+#
 # for i in range(1, 11):
 #     print('Factorial of {} is {}'.format(i, factorial(i)))
 
-# A Python program to solve towers of hanoi problem.
+# A Python program to solve towers of hanoi tower problem.
 
 # def towers(n, a, c, b):
 #     if n == 1:
-#         print('Move disk %i from pole %s to pole %s' %(n, a, c))
+#         print('Move disk %i from %s pole to %s pole' %(n, a, c))
 #     else:
 #         towers(n - 1, a, b, c)
-#         print('Move disk %i from pole %s to pole %s' %(n, a, c))
+#         print('Move disk %i from %s pole to %s pole' %(n, a, c))
 #         towers(n - 1, b, c, a)
 #
-# n = int(input('Enter number of disks: '))
+#
+# n = int(input('Enter the number of disks: '))
 #
 # towers(n, 'A', 'C', 'B')
+
+
+# A Python program to create a lambda function that returns a square value of a given number.
+
+# f = lambda x : x * x
+# value = f(78)
+# print('Value = ', value)
+
+
+# A Python program to calculate the sum of two numbers.
+
+f = lambda x, y : x + y
+value = f(23.4231, 423.312315)
+print('Value = ', value)
