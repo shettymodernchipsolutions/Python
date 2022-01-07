@@ -229,4 +229,3 @@ while (True):
     elif choice == 'w' or choice == 'W':
         print('Balance after withdrawal: ', b.withdrawal(amt))
 
-#
