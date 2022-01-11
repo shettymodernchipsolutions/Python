@@ -446,3 +446,56 @@
 # print(lst1)
 
 # A decora
+
+
+def fact(n):
+    prod = 1
+    while n >= 1:
+        prod *= n
+        n -= 1
+    return prod
+
+
+for i in range(1, 11):
+    print('Factorial of {} is {}'.format(i, fact(i)))
+
+
+def prime(n):
+    x = 1
+    for i in range(2, n):
+        if n % i == 0:
+            x = 0
+            break
+        else:
+            x = 1
+    return x
+
+
+n = int(input('Enter the number: '))
+
+result = prime(n)
+
+if result == 1:
+    print('Entered number is prime.')
+else:
+    print('Entered number is not prime.')
+
+
+def fact(f):
+    product = 1
+    while f >= 1:
+        product *= f
+        f -= 1
+    return product
+
+dic = {}
+def factori(n):
+    for n in dic:
+        return n
+
+
+
+n = int(input('Enter the factorial of: '))
+
+for i in range(n):
+    print('Factorial of {} is {}'.format(i, fact(i)))
