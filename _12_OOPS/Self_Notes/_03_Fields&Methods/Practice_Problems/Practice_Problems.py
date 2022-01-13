@@ -490,65 +490,199 @@ import sys
 #         print('Balance after withdrawal: ', b.withdraw(amt))
 
 
+# class Bank:
+#     def __init__(self, name, balance=0.0):
+#         self.name = name
+#         self.balance = balance
+#
+#     def deposit(self, amount):
+#         self.balance += amount
+#         return self.balance
+#
+#     def withdrawal(self, amount):
+#         if self.balance > amount:
+#             print('Entered amount should be less than the balance.')
+#         else:
+#             self.balance -= amount
+#             return self.balance
+#
+#
+# name = input('Enter the name: ')
+# b = Bank(name)
+#
+# while True:
+#     print('d -deposit, w -withdrwal, e -exit')
+#     choice = input('Enter the choice: ')
+#     if choice == 'e' or choice == 'E':
+#         sys.exit()
+#
+#     amt = int(input('Enter the amount: '))
+#     if choice == 'd' or choice == 'D':
+#         print('Enter the amount to be deposited: ', b.deposit(amt))
+#     elif choice == 'w' or choice == 'W':
+#         print('Enter the withdrawal amount: ', b.withdrawal(amt))
 
 
+# A Python program to create Emp class and make all the members of the Emp class available to another class,
+# i.e. Myclass.
+
+# class Employee:
+#     def __init__(self, id, name, salary):
+#         self.id = id
+#         self.name = name
+#         self.salary = salary
+#
+#     def display(self):
+#         print('Id = ', self.id)
+#         print('Name = ', self.name)
+#         print('Salary = ', self.salary)
+#
+#
+# class Myclass:
+#
+#     @staticmethod
+#     def mymethod(e):
+#         e.salary += 1000
+#         e.display()
+#
+#
+# e = Employee(15, 'Dhananjay', 5861358178)
+# Myclass.mymethod(e)
 
 
+# A Python program to calculate power value of a number with the help of a static method.
+
+# class Myclass:
+#     @staticmethod
+#     def mymethod(x, n):
+#         result = x ** n
+#         print('{} to the power of {} is {}'.format(x, n, result))
+#
+#
+# Myclass.mymethod(32, 3231)
 
 
+# A Python program to create Dob class within Person class.
 
+# class Person:
+#     def __init__(self):
+#         self.name = 'Charles'
+#         self.db = self.Dob()
+#
+#     def display(self):
+#         print('Name = ', self.name)
+#
+#     class Dob:
+#         def __init__(self):
+#             self.dd = 10
+#             self.mm = 5
+#             self.yy = 1991
+#
+#         def display(self):
+#             print('Dob = {}/{}/{}'.format(self.dd, self.mm, self.yy))
+#
+#
+# p = Person()
+# p.display()
+#
+# x = p.db
+# x.display()
 
+# A Python program to create another version of Dob class within Person class.
 
+# class Person:
+#     def __init__(self):
+#         self.name = "Harris"
+#
+#     def display(self):
+#         print('Name = ', self.name)
+#
+#     class Dob:
+#         def __init__(self):
+#             self.dd = 21
+#             self.mm = 6
+#             self.yy = 1994
+#
+#         def display(self):
+#             print('Dob = {}/{}/{}'.format(self.dd, self.mm, self.yy))
+#
+#
+# p = Person()
+# p.display()
+#
+# x = Person().Dob()
+# x.display()
 
+# A Python program to use the Student class which is already available in student.py.
 
+# from student import Std
+#
+# s = Std()
+#
+# s.setid(789)
+# s.setname('Harish')
+# s.setaddress('HNO-22, Ameerpet, Hyderabad')
+# s.setmarks(643)
+#
+# print('Id = ', s.getid())
+# print('Name = ', s.getname())
+# print('Address = ', s.getaddress())
+# print('Marks = ', s.getmarks())
 
+# A Python program to access the base class constructor from sub class.
 
+# class Father:
+#     def __init__(self):
+#         self.property = 800000.00
+#
+#     def display_property(self):
+#         print('Father\'s property = ', self.property)
+#
+#
+# class Son(Father):
+#     pass
+#
+# p = Son()
+# p.display_property()
 
+# A Python program to override super class constructor and method in sub class.
 
+# class Father:
+#     def __init__(self):
+#         self.property = 100000.00
+#
+#     def display_property(self):
+#         print('Father\'s property = ', self.property)
+#
+#
+# class Son(Father):
+#     def __init__(self):
+#         super().__init__()
+#         self.property = 20030000.00
+#
+#     def display_property(self):
+#         print('Son\'s property = ', self.property)
+#
+#
+# p = Son()
+# p.display_property()
 
+# A Python program to call the super constructor in the sub class using super()
 
+class Father:
+    def __init__(self, property=0):
+        self.property = property
 
+    def display_property(self):
+        print('Father\'s property = ', self.property)
 
+class Son(Father):
+    def __init__(self, property1=0, property=0):
+        super().__init__(property)
+        self.property1 = property1
 
+    def display_property(self):
+        print('Total property of child = ', self.property1 + self.property)
 
-
-
-
-
-
-
-
-
-
-
-
-class Bank:
-    def __init__(self, name, balance = 0.0):
-        self.name = name
-        self.balance = balance
-
-    def deposit(self, amount):
-        self.balance += amount
-        return self.balance
-
-    def withdrawal(self, amount):
-        if self.balance > amount:
-            print('Entered amount should be less than the balance.')
-        else:
-            self.balance -= amount
-            return self.balance
-
-name = input('Enter the name: ')
-b = Bank(name)
-
-while True:
-    print('d -deposit, w -withdrwal, e -exit')
-    choice = input('Enter the choice: ')
-    if choice == 'e' or choice == 'E':
-        sys.exit()
-
-    amt = int(input('Enter the amount: '))
-    if choice == 'd' or choice == 'D':
-        print('Enter the amount to be deposited: ', b.deposit(amt))
-    elif choice == 'w' or choice == 'W':
-        print('Enter the withdrawal amount: ', b.withdrawal(amt))
+s = Son(200000.00, 800000.00)
+s.display_property()
