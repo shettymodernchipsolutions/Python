@@ -445,57 +445,205 @@
 # lst1 = reduce(lambda x, y: x * y, lst)
 # print(lst1)
 
-# A decora
+# def fact(n):
+#     prod = 1
+#     while n >= 1:
+#         prod *= n
+#         n -= 1
+#     return prod
+#
+#
+# for i in range(1, 11):
+#     print('Factorial of {} is {}'.format(i, fact(i)))
 
 
-def fact(n):
-    prod = 1
-    while n >= 1:
-        prod *= n
-        n -= 1
-    return prod
+# def prime(n):
+#     x = 1
+#     for i in range(2, n):
+#         if n % i == 0:
+#             x = 0
+#             break
+#         else:
+#             x = 1
+#     return x
+#
+#
+# n = int(input('Enter the number: '))
+#
+# result = prime(n)
+#
+# if result == 1:
+#     print('Entered number is prime.')
+# else:
+#     print('Entered number is not prime.')
+#
+#
+# def fact(f):
+#     product = 1
+#     while f >= 1:
+#         product *= f
+#         f -= 1
+#     return product
+#
+# dic = {}
+# def factori(n):
+#     for n in dic:
+#         return n
+#
+#
+#
+# n = int(input('Enter the factorial of: '))
+#
+# for i in range(n):
+#     print('Factorial of {} is {}'.format(i, fact(i)))
 
 
-for i in range(1, 11):
-    print('Factorial of {} is {}'.format(i, fact(i)))
+# A decorator to increase the value of a function by 2.
+
+# def decor(fun):
+#     def inner():
+#         value = fun()
+#         return value + 2
+#
+#     return inner
+#
+#
+# def num():
+#     return 10
+#
+#
+# result_fun = decor(num)
+# print('Value of a function: ', result_fun())
 
 
-def prime(n):
-    x = 1
-    for i in range(2, n):
-        if n % i == 0:
-            x = 0
-            break
-        else:
-            x = 1
-    return x
+# A Python program to apply a decorator to a function using @ symbol.
+
+# def decor(fun):
+#     def inner():
+#         value = fun()
+#         return value + 2
+#
+#     return inner()
+#
+#
+# @decor
+# def num():
+#     return 10
+#
+#
+# print('Value of a function: ', num)
 
 
-n = int(input('Enter the number: '))
+# A Python program to create two decorators.
 
-result = prime(n)
+# def decor(fun):
+#     def inner():
+#         value = fun()
+#         return value + 2
+#
+#     return inner
+#
+#
+# def decor1(fun):
+#     def inner():
+#         value = fun()
+#         return value * 2
+#
+#     return inner
+#
+#
+# def num():
+#     return 10
+#
+#
+# result_fun = decor(decor1(num))
+# print('The value of a function: ', result_fun())
 
-if result == 1:
-    print('Entered number is prime.')
-else:
-    print('Entered number is not prime.')
+
+# A Python program to apply two decorators to the same function using @ symbol.
+
+# def decor(fun):
+#     def inner():
+#         value = fun()
+#         return value + 2
+#
+#     return inner
+#
+#
+# def decor1(fun):
+#     def inner():
+#         value = fun()
+#         return value * 2
+#
+#     return inner
+#
+#
+# @decor
+# @decor1
+# def num():
+#     return 10
+#
+#
+# print('Value of a function:', num())
 
 
-def fact(f):
-    product = 1
-    while f >= 1:
-        product *= f
-        f -= 1
-    return product
+# A Python program to create a generator that returns a sequence of numbers from x to y.
 
-dic = {}
-def factori(n):
-    for n in dic:
-        return n
+# def mygen(x, y):
+#     while x <= y:
+#         yield x
+#         x += 1
+#
+#
+# g = mygen(5, 10)
+#
+# for i in g:
+#     print(i, end=' ')
 
 
+# A generator that returns characters from A to C.
 
-n = int(input('Enter the factorial of: '))
+# def mygen():
+#     yield 'A'
+#     yield 'B'
+#     yield 'C'
+#
+# g = mygen()
+#
+# print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
 
-for i in range(n):
-    print('Factorial of {} is {}'.format(i, fact(i)))
+
+# A Python program to calculate the gross salary and net salary of an employee.
+
+# def da(basic):
+#     da = basic * 80 / 100
+#     return da
+#
+#
+# def hra(basic):
+#     hra = basic * 15 / 100
+#     return hra
+#
+#
+# def pf(basic):
+#     pf = basic * 12 / 100
+#     return pf
+#
+#
+# def itax(gross):
+#     tax = gross * 0.1
+#     return tax
+#
+#
+# basic = float(input('Enter basic salary: '))
+#
+# gross = basic + da(basic) + hra(basic)
+# print('Your gross salary: {:10.2f}'.format(gross))
+#
+# net = gross - pf(basic) - itax(gross)
+# print('Your net salary: {:10.2f}'.format(net))
+
+
