@@ -314,5 +314,120 @@
 #         print(j, end=' ')
 #     print()
 
-squares = [x ** 2 for x in range(1, 11)]
-print(squares)
+# squares = [x ** 2 for x in range(1, 11)]
+# print(squares)
+
+# Suppose if we want to get squares of integers from 1 to 10 and take only the even numbers from the result,
+# we can write the list comprehension as:
+# squares = [x ** 2 for x in range(1, 11) if x % 2 == 0]
+# print(squares)
+
+# square = [x ** 2 for x in range(2, 11, 2)]
+# print(square)
+
+# If we have two lists 'x' and 'y' and we want to add each element of 'x' with each element of 'y', we can write for loop as:
+
+# x = [10, 11, 12, 13]
+# y = [1, 2, 3, 4]
+# lst = []
+# for i in x:
+#     for j in y:
+#         lst.append(i + j)
+# print(lst)
+
+# x = [12, 54, 87, 32]
+# y = [13, 57, 12, 365]
+# lst = [i + j for i in x for j in y]
+# print(lst)
+
+# sum = [i + j for i in [12, 43, 32, 56] for j in [21, 65, 12, 57]]
+# print(sum)
+
+# The previous list comprehension can be written using string as:
+
+# char = [i + j for i in 'ABC' for j in 'DE']
+# print(char)
+
+# Let's take two lists 'num1' and 'num2' with some numbers as:
+
+# num1 = [89, 12, 22, 43, 32]
+# num2 = [12, 43, 54, 23, 89]
+# num3 = []
+#
+# for i in num1:
+#     if i not in num2:
+#         num3.append(i)
+# print(num3)
+
+# A Python program to accept elements in the form of a tuple and display their sum and average.
+
+# num = eval(input('Enter the number: '))
+# sum = 0
+# n = len(num)
+# for i in range(n):
+#     sum += num[i]
+# print('Sum = ',sum)
+# print('Average = ', sum / n)
+
+# A Python program to find the first occurence of an element in a tuple.
+
+# char = input('Enter the characters seperated by comma: ').split(',')
+# lst = [int(i) for i in char]
+# tup = tuple(lst)
+# print(tup)
+# ele = int(input('Enter the element to find the position: '))
+#
+# try:
+#     pos = tup.index(ele)
+#     print('Entered element found at position: ', pos + 1)
+# except ValueError:
+#     print('Entered element not found.')
+
+# A Python program to sort a tuple with nested tuples.
+
+# emp = ((10, 'Ajay', 91891), (11, 'John', 781731), (12, 'Kundan', 7801731), (13, 'Ivan', 98018))
+#
+# print(sorted(emp))
+# print(sorted(emp, reverse=True))
+# print(sorted(emp, key=lambda s: s[1]))
+# print(sorted(emp, key=lambda x: x[2]))
+
+# A Python program to insert a new element into a tuple of elements at a specified position.
+
+# names = ('Harsha', 'Adithya', 'Yash', 'Gani', 'Madhukar')
+# print(names)
+#
+# lst = input('Enter the name: ').split(',')
+# new = tuple(lst)
+# position = int(input('Enter the position no.: '))
+#
+# names1 = names[0: position]
+# names1 = names1 + new
+# names = names1 + names[position: ]
+#
+# print(names)
+
+# A Python program to modify or replace an existing element of a tuple with a new element.
+
+# num = (10, 20, 30, 40, 50)
+# print(num)
+#
+# lst = [int(input('Enter the number: '))]
+# new = tuple(lst)
+# position = int(input('Enter the position: '))
+#
+# num1 = num[0: position - 1]
+# num1 = num1 + new
+# num = num1 + num[position: ]
+# print(num)
+
+# A program to delete an element from a particular position in the tuple.
+
+num = (10, 20, 30, 40, 50)
+print(num)
+
+ele = int(input('Enter the position no.: '))
+
+num1 = num[0: ele - 1]
+num = num1 + num[ele:]
+print(num)
