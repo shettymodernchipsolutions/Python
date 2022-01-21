@@ -426,8 +426,8 @@
 num = (10, 20, 30, 40, 50)
 print(num)
 
-ele = int(input('Enter the position no.: '))
+pos = int(input('Enter the position no.: '))
 
-num1 = num[0: ele - 1]
-num = num1 + num[ele:]
+num1 = num[0: pos - 1]
+num = num1 + num[pos:]
 print(num)
