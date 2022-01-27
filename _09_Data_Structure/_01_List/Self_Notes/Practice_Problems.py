@@ -423,11 +423,11 @@
 
 # A program to delete an element from a particular position in the tuple.
 
-num = (10, 20, 30, 40, 50)
-print(num)
-
-pos = int(input('Enter the position no.: '))
-
-num1 = num[0: pos - 1]
-num = num1 + num[pos:]
-print(num)
+# num = (10, 20, 30, 40, 50)
+# print(num)
+#
+# pos = int(input('Enter the position no.: '))
+#
+# num1 = num[0: pos - 1]
+# num = num1 + num[pos:]
+# print(num)

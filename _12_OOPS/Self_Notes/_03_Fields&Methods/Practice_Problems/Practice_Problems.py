@@ -274,6 +274,60 @@
 # s1.talk()
 # print('-----------------------------')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # A Python program to understand instance method.
 
 # class Sample:
