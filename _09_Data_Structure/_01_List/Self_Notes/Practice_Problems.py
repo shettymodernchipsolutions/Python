@@ -431,3 +431,54 @@
 # num1 = num[0: pos - 1]
 # num = num1 + num[pos:]
 # print(num)
+
+# x = [[]*3]
+# print(x)
+# x[1].append(5)
+# print(x)
+
+# A Python program to create lists with different types of elements.
+
+# num = [10, 20, 30, 40, 50]
+# print('List elements:', num)
+# print('First element = %d, Last element = %d' % (num[0], num[4]))
+#
+# n = ['Ramesh', 'Ravi', 'Suresh', 'Santosh', 'Nithin']
+# print('List elements:', n)
+# print('First element = %s, Last element = %s' % (n[0], n[4]))
+#
+# char = [10, 20, 30, 40, 50, 55.55, 63.31, 'Ganesh', 'Sharath']
+# print('List elements:', char)
+# print('First element = %d, Last element = %s' % (char[0], char[8]))
+
+# A Python program to create list using range function.
+
+# list1 = range(10)
+# for i in list1:
+#     print(i, end=' ')
+# print()
+#
+# list2 = range(5, 10)
+# for i in list2:
+#     print(i, end=' ')
+# print()
+#
+# list3 = range(0, 10, 2)
+# for i in list3:
+#     print(i, end=' ')
+
+# A Python program to access list elements using loops.
+
+# lst = [10, 20, 30, 40, 50]
+#
+# i = 0
+#
+# print('Using while loop:')
+# while i < len(lst):
+#     print(lst[i])
+#     i += 1
+# print()
+#
+# print('Using for loop:')
+# for i in lst:
+#     print(i)

@@ -1,6 +1,7 @@
 # A Python program to find the currently running thread in a Python program
 
 import threading
+
 print('Let us find the current thread')
 
 print('Currently running thread: ', threading.current_thread().getName())
@@ -10,40 +11,43 @@ if threading.current_thread() == threading.main_thread():
 else:
     print('The current thread is not main thread')
 
-
 # A Python program to create a thread and use it to run a function.
 
 from threading import *
 
+
 def display():
     print('Hello I am running')
+
 
 for i in range(5):
     t = Thread(target=display)
 
     t.start()
 
-
 # A Python program to pass arguments to a function and execute it using a thread.
 
 from threading import *
 
+
 def display(str):
     print(str)
 
-for i in range(5):
-    t = Thread(target=display, args=('Hello', ))
-    t.start()
 
+for i in range(5):
+    t = Thread(target=display, args=('Hello',))
+    t.start()
 
 # A Python program to create a thread by making our class as sub class to Thread class
 
 from threading import Thread
 
+
 class MyThread(Thread):
     def run(self):
         for i in range(1, 6):
             print(i)
+
 
 t1 = MyThread()
 
@@ -51,10 +55,10 @@ t1.start()
 
 t1.join()
 
-
 # A Python program to create a thread that accesses the instance variables of a class.
 
 from threading import *
+
 
 class MyThread(Thread):
 
@@ -65,16 +69,17 @@ class MyThread(Thread):
     def run(self):
         print(self.str)
 
+
 t1 = MyThread('Hello')
 
 t1.start()
 
 t1.join()
 
-
 # A Python program to create a thread that acts on the object of a class that is not derived from a Thread class.
 
 from threading import *
+
 
 class MyThread:
 
@@ -85,17 +90,18 @@ class MyThread:
         print(self.str)
         print('The args are: ', x, y)
 
+
 obj = MyThread('Hello')
 
 t1 = Thread(target=obj.display, args=(1, 2))
 
 t1.start()
 
-
 # A Python program to show single tasking using a thread that prepares tea.
 
 from threading import *
 from time import *
+
 
 class MyThread:
     def prepareTea(self):
@@ -117,16 +123,17 @@ class MyThread:
         print('Filter it and serve....', end='')
         print('Done')
 
+
 obj = MyThread()
 
 t = Thread(target=obj.prepareTea)
 t.start()
 
-
 # A Python program that performs two tasks using two threads simultaneously.
 
 from threading import *
 from time import *
+
 
 class Theatre:
 
@@ -138,6 +145,7 @@ class Theatre:
             print(self.str, " : ", i)
             sleep(0.1)
 
+
 obj1 = Theatre('Cut ticket')
 obj2 = Theatre('Show chair')
 
@@ -147,11 +155,11 @@ t2 = Thread(target=obj2.movieshow)
 t1.start()
 t2.start()
 
-
 # A program where two threads are acting on the same method to allot a berth for the passenger.
 
 from threading import *
 from time import *
+
 
 class Railway:
 
@@ -161,13 +169,14 @@ class Railway:
     def reserve(self, wanted):
         print('Available number of berths: ', self.available)
 
-        if(self.available >= wanted):
+        if (self.available >= wanted):
             name = current_thread().getName()
-            print('%d berths alloted for %s' %(wanted, name))
+            print('%d berths alloted for %s' % (wanted, name))
             sleep(1.5)
             self.available -= wanted
         else:
             print('Sorry, no berths to allot')
+
 
 obj = Railway(1)
 
@@ -180,11 +189,11 @@ t2.setName('Second Person')
 t1.start()
 t2.start()
 
-
 # A Python program for achieving thread synchronization using locks.
 
 from threading import *
 from time import *
+
 
 class Railway:
 
@@ -196,14 +205,15 @@ class Railway:
         self.l.acquire()
         print('Available number of berths: ', self.available)
 
-        if(self.available >= wanted):
+        if (self.available >= wanted):
             name = current_thread().getName()
-            print('%d berths alloted for %s' %(wanted, name))
+            print('%d berths alloted for %s' % (wanted, name))
             sleep(1.5)
             self.available -= wanted
         else:
             print('Sorry, no berths to allot')
         self.l.release()
+
 
 obj = Railway(1)
 

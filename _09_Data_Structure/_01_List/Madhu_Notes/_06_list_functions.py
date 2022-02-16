@@ -175,3 +175,24 @@ list2 = deepcopy(list1)
 print("Before : ", list1, list2, id(list1), id(list2))
 list2[3].append(300)
 print("After : ", list1, list2, id(list1), id(list2))
+
+list = [1, 0, 2]
+a, b, c = list[:: -1]
+print(a)
+print(b)
+print(c)
+print(list[a])
+print(list[b])
+print(list[c])
+
+a = 256
+b = 256
+print()
+print(a is b)
+
+a = 257
+b = 257
+print(a is b)
+
+
+
