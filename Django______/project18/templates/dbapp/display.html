@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Data</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/display.css' %}">
+</head>
+<body>
+    <h1>Student Details</h1>
+        {% if student_data %}
+            <table border="10">
+                <tr>
+                    <th>NAME</th>
+                    <th>DOB</th>
+                    <th>MAIL ID</th>
+                    <th>MOBILE NUMBER</th>
+                    <th>BRANCH</th>
+
+                        {% for data in student_data %}
+                            <tr>
+                                <td>{{ data.name }}</td>
+                                <td>{{ data.dob }}</td>
+                                <td>{{ data.mail_id }}</td>
+                                <td>{{ data.phone_number }}</td>
+                                <td>{{ data.branch }}</td>
+                            </tr>
+                        {% endfor %}
+                </tr>
+            </table>
+        {% else %}
+            <h1>No data to display</h1>
+        {% endif %}
+</body>
+</html>

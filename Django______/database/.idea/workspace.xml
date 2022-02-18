@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d83d5c7f-359f-4495-89c1-76e5fccba712" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/BangaloreCovidApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/HubliCovidApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/MysoreCovidApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/BangaloreCovidApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/BangaloreCovidApp/bangalore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/HubliCovidApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/HubliCovidApp/hubli.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/MysoreCovidApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/MysoreCovidApp/mysore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project10/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/static/timeapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/static/timeapp/css/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/static/timeapp/css/time.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/static/timeapp/images/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/templates/timeapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project11/templates/timeapp/time.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/newsapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/static/newsapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/static/newsapp/css/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/static/newsapp/css/homepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/newsapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/newsapp/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/newsapp/movies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/newsapp/politics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project13/templates/newsapp/sports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project6/BangaloreCovidapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project6/HubliCovidapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project6/MysoreCovidapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project7/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project7/templates/greetingapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project7/templates/greetingapp/display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project8/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project8/templates/timeapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project8/templates/timeapp/time.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demoproject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0033_MCS_Bhavesh_CorePython" beforeDir="false" afterPath="$PROJECT_DIR$/../../0033_MCS_Bhavesh_CorePython" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24wvSfjP4hyKlBmt9JmTrrlvYaR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../0033_MCS_Bhavesh_CorePython" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d83d5c7f-359f-4495-89c1-76e5fccba712" name="Changes" comment="" />
+      <created>1644554465911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644554465911</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

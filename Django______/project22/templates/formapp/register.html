@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'formapp/css/register.css' %}">
+</head>
+<body>
+    <form method="POST">
+        <h1>Student Registration Form</h1>
+        <h2>Please provide the details properly</h2>
+            {{ form.as_p }}
+            {% csrf_token %}
+        <input type="submit" name="Register">
+
+    </form>
+</body>
+</html>

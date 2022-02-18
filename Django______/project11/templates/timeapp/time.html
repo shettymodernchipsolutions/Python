@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'timeapp/css/time.css' %}">
+</head>
+<body>
+    <h1 id="c1">{{ data }}</h1>
+    <h2 id="c2">Current Server Time: {{ server_time }}</h2>
+    <img src="{% static 'timeapp/images/django.jpg' %}">
+</body>
+</html>
