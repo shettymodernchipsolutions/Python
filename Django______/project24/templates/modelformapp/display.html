@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelbasedform</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <form method="POST">
+            <h1>Enter the details of the student</h1>
+                {{ form.as_p }}
+                {% csrf_token %}
+                <input type="submit" name="Submit">
+        </form>
+    </div>
+</body>
+</html>
